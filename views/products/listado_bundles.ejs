@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <!-- <link rel="stylesheet" href="/css/estilos_registro.css">
+        <link rel="stylesheet" href="/css/stylesAlan.css">
+        <link rel="stylesheet" href="/css/stylesLucas.css">
+        <link rel="stylesheet" href="/css/listadoProductos.css"> -->
+        <link rel="stylesheet" href="/css/styles.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <title>Todos los productos</title>
+    </head>
+    <body id="bodyEntero">
+
+
+        <%- include("../partials/headerCategorias") %>
+        <div id="carouselExampleCaptions" class="carousel slide w-50 h-fixed" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/img/1633219649607.jpg" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Valorant Deluxe</h5>
+                    <p>Juego completo versión Deluxe</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/img/1633219579556.jpg" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Valorant Standard</h5>
+                    <p>Juego completo versión Standard</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/img/1633218630384.jpg" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Bundle Killjoy</h5>
+                    <p>Paquete de skins de armas y personaje</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+        <!-- <img src="/img/banner.jpg" alt="Coast" class="banner"> -->
+
+        <div class="stars" id="bgListado"></div>
+        <div class="bg-box" id="bg-box-listado">
+            <div  class="seccionesImg">
+                <h1 class="fs-1"  id="h4-prod-destacados-listado">Bundles</h4>
+            </div>
+            <hr class="productosRelacionados-hr">
+            <section class="container">
+                <div class="row mx-auto" id="listadoProductos">
+                    <% for (let i=0; i<productos.length ; i++){%>
+                        <% if (productos[i].category === "bundle"){%>
+                            <div class="productos col align-self-start" id="box-productos-listado">
+                                <a href="/products/detalleDeProducto/<%= productos[i].id%>">
+                                    <div class="fotos">
+                                        <img src="/img/<%= productos[i].image %>" alt="Coast">
+                                    </div>
+                                </a>
+                                <div class="contDesc">
+                                    <div class="precioDesc">
+                                        <p class="nombre lead" style="color: goldenrod"><%= productos[i].name %></p>
+                                        <p class="precio lead" style="color: goldenrod">$ <%=productos[i].price%></p>
+                                    </div>
+                                </div>
+                            </div>
+                        <%}%>
+                    <%}%>
+                    </div>
+            </section>
+        </div>
+        </main>
+
+        <%- include("../partials/footer") %>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+        <script src="/js/menuHamburguesa.js" async></script>
+        
+    </body>
+
+</html>

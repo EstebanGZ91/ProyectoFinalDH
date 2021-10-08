@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.form-registro {
+    width: 400px;
+    background-color: #24303c;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+    position: relative;
+        z-index: 2;
+}
+
+.form-registro h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.datos_a_ingresar {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid rgba(153, 50, 204, 0.288);
+    font-family: 'Manrope';
+    font-size: 18px;
+    color: white;
+    transition: 0.3s;
+}
+.datos_a_ingresar:hover {
+    border: 1px solid darkorchid;
+    box-shadow: 10px 5px 5px rgb(54, 7, 134);
+    background: linear-gradient(0deg,rgba(29, 236, 197, 0.1),rgba(91, 14, 214, 0.125) 100%);
+}
+
+.datos_a_ingresar:focus {
+    outline: 5px solid darkslateblue;
+    
+}
+.registro-hr{
+    color: rgb(255, 207, 162);
+    
+}
+#titulo-img-perfil {
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+#imagenPerfil {
+    margin-bottom: 2rem;
+}
+.form-registro .boton {
+    width: 100%;
+    background-color: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+.Redes { 
+    font-size: 2em;
+    text-align: center;
+    margin-right: 30px;
+    margin-left: 20px;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+.Google:hover {
+    color: green;
+}
+.Facebook:hover {
+    color: blue;
+}
+.Apple:hover {
+    color: grey;
+}
+.Steam:hover {
+    color: darkslateblue
+}
+.IconosRedes {
+    display: flex;
+    justify-content: center;
+}
+
+
+.lead {
+    color: rgb(170, 170, 170);
+    text-decoration: none!important;
+
+}
+#lead {
+    
+    color: rgb(170, 170, 170)!important;
+    text-decoration: none!important;
+    
+}
+
+a {
+    text-decoration: none;
+    color: teal;
+}
+
+#btn-registrarme {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    align-content: center;
+    background-color: rgba(128, 128, 128, 0.164);
+    transition: 0.3s!important;
+    height: 3.5rem;
+    font-size: xx-large;
+    font-weight: 200;
+    border: 1px solid rgba(153, 50, 204, 0.288);
+    color: grey;
+}
+#btn-registrarme:hover {
+    background: linear-gradient(0deg,rgba(29, 236, 197, 0.5),rgba(91, 14, 214, 0.125) 100%);
+    border: 1px solid darkorchid;
+    color: white;
+}
+.form-creaProd{
+    width: 600px;
+    background-color: #24303c;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+    position: relative;
+        z-index: 2;
+}
+
+
+.p-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#bigger {
+    font-size: 2.0rem;
+}
+.Redes {
+    color: white;
+}
+
+.gap-2{
+    margin-bottom: 10px;
+}
+
+.textErrorForm{
+    color: red;
+}
+
+/*---------------------- Creacion Nuevo Producto ------------------------------*/
+#description {
+    background: none;
+}
+.tipoLabel {
+    color: rgb(179, 179, 179);
+    font-size: 1.7rem;
+}
+.tipoProd{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.tipoProdBox {
+
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#category {
+    height: 2rem;
+    width: 2rem;
+    transition: 0.3s;
+    margin-right: 0.5rem;
+}
+
+
+
+@media only screen and (max-width: 700px){
+    section.form-creaProd{
+        width: 80vw;
+    }
+}
+
+@media only screen and (max-width: 540px){
+    div.tipoProd{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+    label.tipoLabel{
+        position: relative;
+        left: 20px;
+        top: -18px;
+    }
+}

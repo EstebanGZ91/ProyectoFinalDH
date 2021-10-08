@@ -1,0 +1,146 @@
+[
+  {
+    "id": 4,
+    "name": "Pistola Mullticolor",
+    "price": "600.00",
+    "discount": 0,
+    "category": "Recomendado",
+    "description": "Pistola de baja cadencia y gran precisión",
+    "image": "1633200662773.png"
+  },
+  {
+    "id": 5,
+    "name": "Espada Artesana",
+    "price": "590.00",
+    "discount": 0,
+    "category": "Recomendado",
+    "description":"Espada legendaria Mágica",
+    "image":"1633215515894.png"
+  },
+  {
+    "id":6,
+    "name":"Rifle de asalto",
+    "price":"710.00",
+    "discount": 0,
+    "category":"Recomendado",
+    "description":"Rifle de asalto Vandal",
+    "image":"1633215636583.png"
+  },
+  {
+    "id":7,
+    "name":"Pistola Eclipse Ghost",
+    "price":"660.00",
+    "discount": 0,
+    "category":"Destacado",
+    "description":"Pistola con silenciador y  temática espacial",
+    "image":"1633215731366.png"
+  },
+  {
+    "id":8,
+    "name":"Pistola Ego",
+    "price":"650.00",
+    "discount": 0,
+    "category":"Recomendado",
+    "description":"Pistola Ego Ghost silenciada",
+    "image":"1633215834369.png"
+  },
+  {
+    "id":10,
+    "name":"Rifle de asalto Glitch Pop",
+    "price":"750.00",
+    "discount": 0,
+    "category":"Destacado",
+    "description":"Rifle de asalto Glitch Pop",
+    "image":"1633216976918.png"
+  },
+  {
+    "id":11,
+    "name":"KTAC Blade",
+    "price":"490.00",
+    "discount": 0,
+    "category":"Destacado",
+    "description":"Espada KTAC Blade optimizada",
+    "image":"1633217048801.png"
+  },
+  {
+    "id":12,
+    "name":"Rifle de asalto KTAC Vandal",
+    "price":"720.00",
+    "discount": 0,
+    "category":"Destacado",
+    "description":"Rifle de asalto KTAC Vandal",
+    "image":"1633217136825.png"
+  },
+  {
+    "id": 13,
+    "name": "Producto Prueba con Foto 1",
+    "price": "450",
+    "discount": 0,
+    "category": "items",
+    "description": "Item Skin Arma 1000x563px foto ",
+    "image": "1625528996453.webp"
+  },
+  {
+    "id": 14,
+    "name": "Producto Prueba foto 2",
+    "price": "750",
+    "discount": 0,
+    "category": "items",
+    "description": "Skin Arma 2 1000x563",
+    "image": "1625529098729.webp"
+  },
+  {
+    "id": 15,
+    "name": "Producto Prueba 3 foto ",
+    "price": "850",
+    "discount": 0,
+    "category": "items",
+    "description": "Skin Arma 1000x563",
+    "image": "1625529138144.webp"
+  },
+  {
+    "id": 16,
+    "name": "Producto Prueba 4 foto",
+    "price": "320",
+    "discount": 0,
+    "category": "items",
+    "description": "Skin Arma 1000*563px",
+    "image": "1625529555581.webp"
+  },
+  {
+    "id": 17,
+    "name": "Producto Prueba 5 foto ",
+    "price": "650",
+    "discount": 0,
+    "category": "items",
+    "description": "Skin arma 2 1000x563",
+    "image": "1625529725563.webp"
+  },
+  {
+    "id": 18,
+    "name": "Skin Arma",
+    "price": "8450",
+    "discount": 0,
+    "category": "items",
+    "description": "960x380",
+    "image": "1625530099836.webp"
+  },
+  {
+    "id": 19,
+    "name": "Producto prueba 7",
+    "price": "10",
+    "discount": 0,
+    "category": "items",
+    "description": "1000x563",
+    "image": "1625530230317.webp"
+  },
+  {
+    "id": 20,
+    "name": "Prueba foto arma",
+    "price": "4500",
+    "discount": 0,
+    "category": "items",
+    "description": "1000x234",
+    "image": "1625530374398.webp"
+  }
+]

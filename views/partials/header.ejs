@@ -1,0 +1,55 @@
+<header>
+    <div class="starsDos"></div>
+    <nav class="navbar">
+        <div class="toogleBar">
+            <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav(), ShowAndHide()">×</a>
+                <a href="/"><img src="/img/logoultimo.png" alt="Logo Spartan Games" class="logoSpartanGames" width="200px" height="200px"></img></a>
+                <a href="/">Home</a>
+                <a href="/products/listado_productos">Tienda</a>
+                <a href="/products/creacion_producto">Vender</a>
+                <a href="/products/carrito">Carrito</a>
+                <a href="/users/ingreso">Ingreso</a>
+                <a href="/users/registro">Registro</a>
+            </div>
+            
+            <div id="main">
+                <button id="botonToggle" class="fa fa-bars fa-2x" onclick="openNav(), ShowAndHide()"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" onClick = "this.style.visibility= 'hidden';">
+                    <span class="navbar-toggler-icon"></span>
+                </button> 
+            </div>
+        </div>            
+        <section class="parteIzq">
+            <div class="logo">
+                <a href="/" class="btn btn-outline-secondary botonNavBar" id="logoArriba" type="button"></a>
+            </div>
+            <div class="botones">
+                <a href="/products/listado_productos" class="btn btn-outline-secondary botonNavBar" type="button" aria-expanded="false">Tienda</a>
+            </div>
+            <div class="botones">
+                <a href="/products/creacion_producto" class="btn btn-outline-secondary botonNavBar" type="button">Vender</a>
+            </div>
+            <div class="botones">
+                <a href="/products/carrito" class="btn btn-outline-secondary botonNavBar" type="button">Carrito</a>
+            </div>
+        </section>
+        <section class="parteDer">   
+            
+            <% if (locals.isLogged) {%>
+                <div class="botones">
+                    <a class="btn btn-outline-secondary botonNavBar" href="/users/perfil" type="button"> <!--<img src="/img/<%= locals.userLogged.imagen %>" >--><%= locals.userLogged.nombre %></a>
+                </div>
+            <% } else { %>
+                <div class="botones" style="z-index: 5;">
+                    <button class="btn btn-outline-secondary dropdown-toggle botonNavBar botonCuenta " type="button" data-bs-toggle="dropdown" aria-expanded="false">Cuenta</button>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="/users/ingreso" type="button">Log In</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="/users/registro" type="button">Registrate</a></li>
+                    </ul>
+                </div>
+            <% } %>
+        </section>   
+    </nav>
+
+</header>
